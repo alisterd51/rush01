@@ -16,7 +16,7 @@
 void	ft_init(int line_len, int **map, int **constraint)
 {
 	*map = (int *)ft_calloc(line_len * line_len, sizeof(int));
-	*constraint = (int *)ft_calloc(line_len * line_len, sizeof(int));
+	*constraint = (int *)ft_calloc(line_len * 4, sizeof(int));
 }
 
 void	ft_clean(int **map, int **constraint)
