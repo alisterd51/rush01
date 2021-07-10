@@ -44,6 +44,27 @@ int	check_rowleft(int line_len, int rowleft, int *map, int y)
 		|| (rowleft == 4 && count != 4))
 		return (1);
 	return (0);
+	int	tab[9];
+	int	count;
+	int	i;
+
+	i = 0;
+	while (i < line_len)
+	{
+		tab[i] = map[i * line_len + x];
+		i++;
+	}
+	if (colup == 1 && tab[0] != line_len)
+		return (1);
+	i = line_len;
+	count = count_skyscraper(line_len, tab);
+	while (i > 1)
+	{
+		if (colup == i && count != i)
+			return (1);
+		i--;
+	}
+	return (0);
 }
 
 int	check_rowright(int line_len, int rowright, int *map, int y)
@@ -63,16 +84,26 @@ int	check_rowright(int line_len, int rowright, int *map, int y)
 
 int	check_colup(int line_len, int colup, int *map, int x)
 {
-	const int	tab[4] = {map[0 * 4 + x], map[1 * 4 + x],
-							map[2 * 4 + x], map[3 * 4 + x]};
-	int			count;
+	int	tab[9];
+	int	count;
+	int	i;
 
-	count = count_skyscraper(tab);
-	if ((colup == 1 && tab[0] != 4)
-		|| (colup == 2 && count != 2)
-		|| (colup == 3 && count != 3)
-		|| (colup == 4 && count != 4))
+	i = 0;
+	while (i < line_len)
+	{
+		tab[i] = map[i * line_len + x];
+		i++;
+	}
+	if (colup == 1 && tab[0] != line_len)
 		return (1);
+	i = line_len;
+	count = count_skyscraper(line_len, tab);
+	while (i > 1)
+	{
+		if (colup == i && count != i)
+			return (1);
+		i--;
+	}
 	return (0);
 }
 
