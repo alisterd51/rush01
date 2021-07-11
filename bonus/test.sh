@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/zsh
 
 touch result.txt
 
