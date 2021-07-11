@@ -34,6 +34,10 @@ static int	check(int line_len, int *map, int *constraint, int depth)
 		return (0);
 	if (y == 0 && constraint[x] == 1 && res != line_len)
 		return (0);
+	if (res == line_len
+		&& (check_colup(line_len, constraint[x], map, x)
+			|| check_rowleft(line_len, constraint[line_len * 2 + y], map, y)))
+		return (0);
 	if (x == line_len - 1
 		&& (check_rowleft(line_len, constraint[line_len * 2 + y], map, y)
 			|| check_rowright(line_len, constraint[line_len * 3 + y], map, y)))
