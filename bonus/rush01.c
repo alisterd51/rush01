@@ -13,54 +13,54 @@
 #include <stddef.h>
 #include "rush01.h"
 
-int precheck_colup(int line_len, int colup, int *map, int x)
+int	precheck_colup(int line_len, int colup, int *map, int x)
 {
-    int tab[9];
-    int count;
-    int i;
+	int	tab[9];
+	int	count;
+	int	i;
 
-    i = 0;
-    while (i < line_len)
-    {
-        tab[i] = map[i * line_len + x];
-        i++;
-    }
-    if (colup == 1 && tab[0] != line_len)
-        return (1);
-    i = line_len;
-    count = count_skyscraper(line_len, tab);
-    while (i > 1)
-    {
-        if (colup == i && count > i)
-            return (1);
-        i--;
-    }
-    return (0);
+	i = 0;
+	while (i < line_len)
+	{
+		tab[i] = map[i * line_len + x];
+		i++;
+	}
+	if (colup == 1 && tab[0] != line_len)
+		return (1);
+	i = line_len;
+	count = count_skyscraper(line_len, tab);
+	while (i > 1)
+	{
+		if (colup == i && count > i)
+			return (1);
+		i--;
+	}
+	return (0);
 }
 
-int precheck_rowleft(int line_len, int rowleft, int *map, int y)
+int	precheck_rowleft(int line_len, int rowleft, int *map, int y)
 {
-    int tab[9];
-    int count;
-    int i;
+	int	tab[9];
+	int	count;
+	int	i;
 
-    i = 0;
-    while (i < line_len)
-    {
-        tab[i] = map[y * line_len + i];
-        i++;
-    }
-    if (rowleft == 1 && tab[0] != line_len)
-        return (1);
-    i = line_len;
-    count = count_skyscraper(line_len, tab);
-    while (i > 1)
-    {
-        if (rowleft == i && count > i)
-            return (1);
-        i--;
-    }
-    return (0);
+	i = 0;
+	while (i < line_len)
+	{
+		tab[i] = map[y * line_len + i];
+		i++;
+	}
+	if (rowleft == 1 && tab[0] != line_len)
+		return (1);
+	i = line_len;
+	count = count_skyscraper(line_len, tab);
+	while (i > 1)
+	{
+		if (rowleft == i && count > i)
+			return (1);
+		i--;
+	}
+	return (0);
 }
 
 static int	check(int line_len, int *map, int *constraint, int depth)
