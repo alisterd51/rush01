@@ -31,6 +31,7 @@ void	ft_clean(int **map, int **constraint);
 /*
 ** check.c
 */
+int		count_skyscraper(int line_len, int *tab);
 int		check_rowleft(int line_len, int rowleft, int *map, int y);
 int		check_rowright(int line_len, int rowright, int *map, int y);
 int		check_colup(int line_len, int colup, int *map, int x);

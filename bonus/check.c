@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	count_skyscraper(int line_len, int *tab)
+int	count_skyscraper(int line_len, int *tab)
 {
 	int	ret;
 	int	max;

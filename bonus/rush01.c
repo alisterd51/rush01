@@ -13,6 +13,56 @@
 #include <stddef.h>
 #include "rush01.h"
 
+int precheck_colup(int line_len, int colup, int *map, int x)
+{
+    int tab[9];
+    int count;
+    int i;
+
+    i = 0;
+    while (i < line_len)
+    {
+        tab[i] = map[i * line_len + x];
+        i++;
+    }
+    if (colup == 1 && tab[0] != line_len)
+        return (1);
+    i = line_len;
+    count = count_skyscraper(line_len, tab);
+    while (i > 1)
+    {
+        if (colup == i && count > i)
+            return (1);
+        i--;
+    }
+    return (0);
+}
+
+int precheck_rowleft(int line_len, int rowleft, int *map, int y)
+{
+    int tab[9];
+    int count;
+    int i;
+
+    i = 0;
+    while (i < line_len)
+    {
+        tab[i] = map[y * line_len + i];
+        i++;
+    }
+    if (rowleft == 1 && tab[0] != line_len)
+        return (1);
+    i = line_len;
+    count = count_skyscraper(line_len, tab);
+    while (i > 1)
+    {
+        if (rowleft == i && count > i)
+            return (1);
+        i--;
+    }
+    return (0);
+}
+
 static int	check(int line_len, int *map, int *constraint, int depth)
 {
 	int	x;
@@ -30,6 +80,9 @@ static int	check(int line_len, int *map, int *constraint, int depth)
 		if (res == map[y * line_len + x])
 			return (0);
 	y = depth / line_len;
+	if (precheck_colup(line_len, constraint[x], map, x)
+		|| precheck_rowleft(line_len, constraint[line_len * 2 + y], map, y))
+		return (0);
 	if (x == 0 && constraint[line_len * 2 + y] == 1 && res != line_len)
 		return (0);
 	if (y == 0 && constraint[x] == 1 && res != line_len)
