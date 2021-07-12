@@ -66,8 +66,8 @@ echo "./rush-01 \"2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2\"" &>> result.txt
 valgrind ./rush-01 "2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2" &>> result.txt
 echo "./rush-01 \"1 4 2 2 3 2 1 2 1 3 2 2 3 1 2 2\"" &>> result.txt
 valgrind ./rush-01 "1 4 2 2 3 2 1 2 1 3 2 2 3 1 2 2" &>> result.txt
-echo "./rush-01 \"4 3 2 1 1\t2 2 2 4 3 2 1 1 2 2 2\"" &>> result.txt
-valgrind ./rush-01 "4 3 2 1 1\t2 2 2 4 3 2 1 1 2 2 2" &>> result.txt
+echo "./rush-01 \"4 3 2 1 1	2 2 2 4 3 2 1 1 2 2 2\"" &>> result.txt
+valgrind ./rush-01 "4 3 2 1 1	2 2 2 4 3 2 1 1 2 2 2" &>> result.txt
 
 echo "=============================================" &>> result.txt
 echo "|             test OK                       |" &>> result.txt
@@ -118,8 +118,8 @@ echo "./rush-01 \"       \"" &>> result.txt
 valgrind ./rush-01 "       " &>> result.txt
 echo "./rush-01 \"1 111 1\"" &>> result.txt
 valgrind ./rush-01 "1 111 1" &>> result.txt
-echo "./rush-01 \"1 1\t1 1\"" &>> result.txt
-valgrind ./rush-01 "1 1\t1 1" &>> result.txt
+echo "./rush-01 \"1 1	1 1\"" &>> result.txt
+valgrind ./rush-01 "1 1	1 1" &>> result.txt
 echo "./rush-01 \"1 a 1 1\"" &>> result.txt
 valgrind ./rush-01 "1 a 1 1" &>> result.txt
 echo "./rush-01 \"1 2 1 1\"" &>> result.txt
@@ -152,8 +152,8 @@ echo "./rush-01 \"               \"" &>> result.txt
 valgrind ./rush-01 "               " &>> result.txt
 echo "./rush-01 \"2 1 1 212 1 1 2\"" &>> result.txt
 valgrind ./rush-01 "2 1 1 212 1 1 2" &>> result.txt
-echo "./rush-01 \"2 1 1 2\t2 1 1 2\"" &>> result.txt
-valgrind ./rush-01 "2 1 1 2\t2 1 1 2" &>> result.txt
+echo "./rush-01 \"2 1 1 2	2 1 1 2\"" &>> result.txt
+valgrind ./rush-01 "2 1 1 2	2 1 1 2" &>> result.txt
 echo "./rush-01 \"2 1 a 2 2 1 1 2\"" &>> result.txt
 valgrind ./rush-01 "2 1 a 2 2 1 1 2" &>> result.txt
 echo "./rush-01 \"2 1 3 2 2 1 1 2\"" &>> result.txt
@@ -190,8 +190,8 @@ echo "./rush-01 \"                       \"" &>> result.txt
 valgrind ./rush-01 "                       " &>> result.txt
 echo "./rush-01 \"2 2 1 211 3 3 1 2 1 2 2\"" &>> result.txt
 valgrind ./rush-01 "2 2 1 211 3 3 1 2 1 2 2" &>> result.txt
-echo "./rush-01 \"2 2 1 2 1 3 3\t1 2 1 2 2\"" &>> result.txt
-valgrind ./rush-01 "2 2 1 2 1 3 3\t1 2 1 2 2" &>> result.txt
+echo "./rush-01 \"2 2 1 2 1 3 3	1 2 1 2 2\"" &>> result.txt
+valgrind ./rush-01 "2 2 1 2 1 3 3	1 2 1 2 2" &>> result.txt
 echo "./rush-01 \"2 2 1 2 a 3 3 1 2 1 2 2\"" &>> result.txt
 valgrind ./rush-01 "2 2 1 2 a 3 3 1 2 1 2 2" &>> result.txt
 echo "./rush-01 \"2 2 1 2 1 3 3 1 4 1 2 2\"" &>> result.txt
