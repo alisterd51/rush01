@@ -76,26 +76,46 @@ echo "=============================================" &>> result.txt
 echo "|             test OK                       |" &>> result.txt
 echo "=============================================" &>> result.txt
 
-echo "./rush-01 \"4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2\"" &>> result.txt
-./rush-01 "4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2" &>> result.txt
-echo "./rush-01 \"2 1 2 3 2 3 2 1 2 3 1 2 3 2 3 1\"" &>> result.txt
-./rush-01 "2 1 2 3 2 3 2 1 2 3 1 2 3 2 3 1" &>> result.txt
-echo "./rush-01 \"3 2 1 2 1 2 3 2 3 2 2 1 2 1 3 3\"" &>> result.txt
-./rush-01 "3 2 1 2 1 2 3 2 3 2 2 1 2 1 3 3" &>> result.txt
-echo "./rush-01 \"3 1 2 3 2 2 3 1 2 2 1 3 3 2 2 1\"" &>> result.txt
-./rush-01 "3 1 2 3 2 2 3 1 2 2 1 3 3 2 2 1" &>> result.txt
-echo "./rush-01 \"3 2 2 1 2 2 1 3 4 2 1 3 1 2 2 2\"" &>> result.txt
-./rush-01 "3 2 2 1 2 2 1 3 4 2 1 3 1 2 2 2" &>> result.txt
-echo "./rush-01 \"2 3 1 2 2 1 3 2 3 1 3 2 2 4 1 2\"" &>> result.txt
-./rush-01 "2 3 1 2 2 1 3 2 3 1 3 2 2 4 1 2" &>> result.txt
+echo "./rush-01 \"1 2 2 3 3 2 2 1 1 3 2 3 4 2 2 1\"" &>> result.txt
+./rush-01 "1 2 2 3 3 2 2 1 1 3 2 3 4 2 2 1" &>> result.txt
 echo "./rush-01 \"1 2 3 2 3 1 2 2 1 4 2 2 4 1 2 2\"" &>> result.txt
 ./rush-01 "1 2 3 2 3 1 2 2 1 4 2 2 4 1 2 2" &>> result.txt
+echo "./rush-01 \"1 3 3 2 4 1 2 2 1 2 3 2 2 1 2 3\"" &>> result.txt
+./rush-01 "1 3 3 2 4 1 2 2 1 2 3 2 2 1 2 3" &>> result.txt
+echo "./rush-01 \"1 4 2 2 4 1 2 2 1 2 3 2 2 1 2 3\"" &>> result.txt
+./rush-01 "1 4 2 2 4 1 2 2 1 2 3 2 2 1 2 3" &>> result.txt
+echo "./rush-01 \"2 3 1 2 2 1 3 2 3 1 3 2 2 4 1 2\"" &>> result.txt
+./rush-01 "2 3 1 2 2 1 3 2 3 1 3 2 2 4 1 2" &>> result.txt
+echo "./rush-01 \"2 1 2 3 2 3 2 1 2 3 1 2 3 2 3 1\"" &>> result.txt
+./rush-01 "2 1 2 3 2 3 2 1 2 3 1 2 3 2 3 1" &>> result.txt
 echo "./rush-01 \"2 1 2 4 2 4 2 1 2 1 3 2 3 3 2 1\"" &>> result.txt
 ./rush-01 "2 1 2 4 2 4 2 1 2 1 3 2 3 3 2 1" &>> result.txt
 echo "./rush-01 \"2 4 1 2 2 1 3 3 2 4 1 2 2 1 3 3\"" &>> result.txt
 ./rush-01 "2 4 1 2 2 1 3 3 2 4 1 2 2 1 3 3" &>> result.txt
 echo "./rush-01 \"2 2 1 3 2 3 2 1 2 2 1 3 2 2 3 1\"" &>> result.txt
 ./rush-01 "2 2 1 3 2 3 2 1 2 2 1 3 2 2 3 1" &>> result.txt
+echo "./rush-01 \"2 3 2 1 3 1 2 2 3 1 2 2 1 3 2 2\"" &>> result.txt
+./rush-01 "2 3 2 1 3 1 2 2 3 1 2 2 1 3 2 2" &>> result.txt
+echo "./rush-01 \"2 2 2 1 2 1 3 4 3 3 1 2 1 2 3 3\"" &>> result.txt
+./rush-01 "2 2 2 1 2 1 3 4 3 3 1 2 1 2 3 3" &>> result.txt
+echo "./rush-01 \"2 4 2 1 2 1 2 4 2 1 3 2 1 2 2 3\"" &>> result.txt
+./rush-01 "2 4 2 1 2 1 2 4 2 1 3 2 1 2 2 3" &>> result.txt
+echo "./rush-01 \"2 2 1 3 3 2 2 1 3 1 2 4 2 2 2 1\"" &>> result.txt
+./rush-01 "2 2 1 3 3 2 2 1 3 1 2 4 2 2 2 1" &>> result.txt
+echo "./rush-01 \"3 2 1 2 1 2 3 2 3 2 2 1 2 1 3 3\"" &>> result.txt
+./rush-01 "3 2 1 2 1 2 3 2 3 2 2 1 2 1 3 3" &>> result.txt
+echo "./rush-01 \"3 1 2 3 2 2 3 1 2 2 1 3 3 2 2 1\"" &>> result.txt
+./rush-01 "3 1 2 3 2 2 3 1 2 2 1 3 3 2 2 1" &>> result.txt
+echo "./rush-01 \"3 2 2 1 2 2 1 3 4 2 1 3 1 2 2 2\"" &>> result.txt
+./rush-01 "3 2 2 1 2 2 1 3 4 2 1 3 1 2 2 2" &>> result.txt
+echo "./rush-01 \"3 1 2 2 2 3 2 1 2 2 1 4 2 2 4 1\"" &>> result.txt
+./rush-01 "3 1 2 2 2 3 2 1 2 2 1 4 2 2 4 1" &>> result.txt
+echo "./rush-01 \"3 1 3 2 2 4 1 2 2 3 1 2 2 1 3 2\"" &>> result.txt
+./rush-01 "3 1 3 2 2 4 1 2 2 3 1 2 2 1 3 2" &>> result.txt
+echo "./rush-01 \"4 2 1 2 1 2 3 3 3 3 2 1 2 1 2 4\"" &>> result.txt
+./rush-01 "4 2 1 2 1 2 3 3 3 3 2 1 2 1 2 4" &>> result.txt
+echo "./rush-01 \"4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2\"" &>> result.txt
+./rush-01 "4 3 2 1 1 2 2 2 4 3 2 1 1 2 2 2" &>> result.txt
 
 echo "=============================================" &>> result.txt
 echo "|             Partie bonus                  |" &>> result.txt
