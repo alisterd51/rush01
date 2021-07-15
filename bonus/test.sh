@@ -211,6 +211,26 @@ echo "./rush-01 \"2 2 1 2 1 3 3 1 2 1 2 2\"" &>> result.txt
 ./rush-01 "2 2 1 2 1 3 3 1 2 1 2 2" &>> result.txt
 echo "./rush-01 \"1 2 2 3 1 2 1 2 2 3 1 2\"" &>> result.txt
 ./rush-01 "1 2 2 3 1 2 1 2 2 3 1 2" &>> result.txt
+echo "./rush-01 \"3 1 2 1 2 2 2 2 1 2 1 3\"" &>> result.txt
+./rush-01 "3 1 2 1 2 2 2 2 1 2 1 3" &>> result.txt
+echo "./rush-01 \"2 1 3 2 2 1 2 1 3 2 2 1\"" &>> result.txt
+./rush-01 "2 1 3 2 2 1 2 1 3 2 2 1" &>> result.txt
+echo "./rush-01 \"2 3 1 2 1 2 2 1 2 1 3 2\"" &>> result.txt
+./rush-01 "2 3 1 2 1 2 2 1 2 1 3 2" &>> result.txt
+echo "./rush-01 \"1 3 2 2 1 2 1 3 2 2 1 2\"" &>> result.txt
+./rush-01 "1 3 2 2 1 2 1 3 2 2 1 2" &>> result.txt
+echo "./rush-01 \"2 1 2 1 3 2 2 3 1 2 1 2\"" &>> result.txt
+./rush-01 "2 1 2 1 3 2 2 3 1 2 1 2" &>> result.txt
+echo "./rush-01 \"2 1 2 2 3 1 2 1 2 2 3 1\"" &>> result.txt
+./rush-01 "2 1 2 2 3 1 2 1 2 2 3 1" &>> result.txt
+echo "./rush-01 \"1 2 2 3 2 1 1 2 3 2 2 1\"" &>> result.txt
+./rush-01 "1 2 2 3 2 1 1 2 3 2 2 1" &>> result.txt
+echo "./rush-01 \"3 2 1 1 2 2 3 2 1 1 2 2\"" &>> result.txt
+./rush-01 "3 2 1 1 2 2 3 2 1 1 2 2" &>> result.txt
+echo "./rush-01 \"1 2 3 2 2 1 1 2 2 3 2 1\"" &>> result.txt
+./rush-01 "1 2 3 2 2 1 1 2 2 3 2 1" &>> result.txt
+echo "./rush-01 \"2 2 1 1 2 3 2 2 1 1 2 3\"" &>> result.txt
+./rush-01 "2 2 1 1 2 3 2 2 1 1 2 3" &>> result.txt
 
 echo "=============================================" &>> result.txt
 echo "|             test Erreur 5 x 5             |" &>> result.txt
