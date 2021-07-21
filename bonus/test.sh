@@ -13,7 +13,8 @@ echo "=============================================" &>> result.txt
 echo "|             compilation                   |" &>> result.txt
 echo "=============================================" &>> result.txt
 
-cc -Wall -Wextra -Werror -fsanitize=undefined -fsanitize=address *.c -o rush-01 &>> result.txt
+cc -Wall -Wextra -Werror -g3 -fsanitize=undefined -fsanitize=address *.c -o rush-01 &>> result.txt
+cc -Wall -Wextra -Werror -g3 -fsanitize=leak -fsanitize=undefined -fsanitize=address *.c -o rush-01 &>> result.txt
 
 echo "=============================================" &>> result.txt
 echo "|             fonctions utilise             |" &>> result.txt
