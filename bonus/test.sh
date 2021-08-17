@@ -4,6 +4,19 @@ rm -f result.txt
 touch result.txt
 
 echo "=============================================" &>> result.txt
+echo "|             auteurs                       |" &>> result.txt
+echo "=============================================" &>> result.txt
+
+grep -rF "by" . | grep -v "./test.sh" &>> result.txt
+git log  --all | grep "Author:" &>> result.txt
+
+echo "=============================================" &>> result.txt
+echo "|             logs                          |" &>> result.txt
+echo "=============================================" &>> result.txt
+
+git log --all --oneline &>> result.txt
+
+echo "=============================================" &>> result.txt
 echo "|             norminette                    |" &>> result.txt
 echo "=============================================" &>> result.txt
 
